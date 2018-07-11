@@ -1,0 +1,384 @@
+.body {
+  background-color: black;
+  width: 100%;
+  height: 100vh; }
+
+#clickMain {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  cursor: pointer; }
+  #clickMain .clickMain {
+    position: relative;
+    background-image: url(../Images/fire.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 220%;
+    height: 88px;
+    border-radius: 50%;
+    line-height: 57px;
+    box-shadow: 0px 0px 21px 6px #862929;
+    border: 1px solid #862929;
+    outline: none; }
+    #clickMain .clickMain h1 {
+      color: white;
+      font-size: 1ch;
+      font-weight: bold;
+      text-align: center;
+      transition: all 1s ease-in; }
+
+@keyframes getSmall {
+  from {
+    width: 220%;
+    height: 88px;
+    background-image: url(../Images/fire.png);
+    box-shadow: 0px 0px 21px 6px #862929; }
+  to {
+    width: 120%;
+    height: 46px;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.582), rgba(255, 0, 0, 0.568)), url(../Images/fire.png);
+    box-shadow: 0px 0px 21px 6px #f86c6c; } }
+@keyframes smallBigAnimate {
+  0% {
+    width: 120%;
+    height: 46px;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.582), rgba(255, 0, 0, 0.568)), url(../Images/fire.png);
+    box-shadow: 0px 0px 21px 6px #f86c6c;
+    transform: scale(1); }
+  50% {
+    width: 160%;
+    height: 62px;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.582), rgba(255, 0, 0, 0.568)), url(../Images/fire.png);
+    box-shadow: 0px 0px 21px 6px #f86c6c;
+    transform: scale(1.1); }
+  100% {
+    width: 120%;
+    height: 46px;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.582), rgba(255, 0, 0, 0.568)), url(../Images/fire.png);
+    box-shadow: 0px 0px 21px 6px #f86c6c;
+    transform: scale(1); } }
+@keyframes stopSmallBigAnimate {
+  0% {
+    width: 120%;
+    height: 46px;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.582), rgba(255, 0, 0, 0.568)), url(../Images/fire.png);
+    box-shadow: 0px 0px 21px 6px #f86c6c;
+    transform: scale(1); }
+  50% {
+    width: 120%;
+    height: 46px;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.582), rgba(255, 0, 0, 0.568)), url(../Images/fire.png);
+    box-shadow: 0px 0px 21px 6px #f86c6c;
+    transform: scale(1); }
+  100% {
+    width: 120%;
+    height: 46px;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.582), rgba(255, 0, 0, 0.568)), url(../Images/fire.png);
+    box-shadow: 0px 0px 21px 6px #f86c6c;
+    transform: scale(1); } }
+#radius {
+  position: absolute;
+  border-radius: 50%;
+  width: 806%;
+  height: 338px;
+  left: -284%;
+  top: -139%; }
+  #radius .star1, #radius .star2, #radius .star3, #radius .star4, #radius .star01, #radius .star5, #radius .star6, #radius .star02, #radius .star03, #radius .star04, #radius .star7 {
+    position: absolute;
+    width: 18%;
+    height: 59px;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  #radius .star2 {
+    background-image: url(../Images/star1.jpg); }
+  #radius .star3 {
+    background-image: url(../Images/star2.jpg);
+    margin-left: 40%;
+    margin-top: 42%; }
+  #radius .star4 {
+    background-image: url(../Images/star3.jpg);
+    margin-left: 40%;
+    margin-top: 42%; }
+  #radius .star5 {
+    background-image: url(../Images/star4.jpg);
+    margin-left: 40%;
+    margin-top: 42%; }
+  #radius .star6 {
+    background-image: url(../Images/star5.jpg);
+    margin-left: 40%;
+    margin-top: 42%; }
+  #radius .star7 {
+    background-image: url(../Images/star6.jpg);
+    margin-left: 40%;
+    margin-top: 42%; }
+  #radius .star04 {
+    background-image: url(../Images/star7.jpg);
+    margin-left: 40%;
+    margin-top: 42%; }
+  #radius .star03 {
+    background-image: url(../Images/star8.jpg);
+    margin-left: 40%;
+    margin-top: 42%; }
+  #radius .star02 {
+    background-image: url(../Images/star9.jpg);
+    margin-left: -10%;
+    margin-top: 46%; }
+  #radius .star01 {
+    background-image: url(../Images/star10.jpg);
+    margin-left: 40%;
+    margin-top: 42%; }
+  #radius .star1 {
+    background-image: url(../Images/star11.jpg);
+    margin-left: 40%;
+    margin-top: 42%; }
+
+@keyframes star1 {
+  from {
+    margin-left: 40%;
+    margin-top: 42%; }
+  to {
+    margin-left: 40%;
+    margin-top: -8%; } }
+@keyframes star2 {
+  from {
+    margin-left: 40%;
+    margin-top: 42%; }
+  to {
+    margin-left: 70%;
+    margin-top: -1%; } }
+@keyframes star3 {
+  from {
+    margin-left: 40%;
+    margin-top: 42%; }
+  to {
+    margin-left: 86%;
+    margin-top: 19%; } }
+@keyframes star4 {
+  from {
+    margin-left: 40%;
+    margin-top: 42%; }
+  to {
+    margin-left: 91%;
+    margin-top: 46%; } }
+@keyframes star5 {
+  from {
+    margin-left: 40%;
+    margin-top: 42%; }
+  to {
+    margin-left: 82%;
+    margin-top: 72%; } }
+@keyframes star6 {
+  from {
+    margin-left: 40%;
+    margin-top: 42%; }
+  to {
+    margin-left: 58%;
+    margin-top: 90%; } }
+@keyframes star7 {
+  from {
+    margin-left: 40%;
+    margin-top: 42%; }
+  to {
+    margin-left: 24%;
+    margin-top: 90%; } }
+@keyframes star8 {
+  from {
+    margin-left: 40%;
+    margin-top: 42%; }
+  to {
+    margin-left: 0%;
+    margin-top: 72%; } }
+@keyframes star9 {
+  from {
+    margin-left: 40%;
+    margin-top: 42%; }
+  to {
+    margin-left: -10%;
+    margin-top: 46%; } }
+@keyframes star10 {
+  from {
+    margin-left: 40%;
+    margin-top: 42%; }
+  to {
+    margin-left: -4%;
+    margin-top: 20%; } }
+@keyframes star11 {
+  from {
+    margin-left: 40%;
+    margin-top: 42%; }
+  to {
+    margin-left: 12%;
+    margin-top: 0%; } }
+@keyframes revolution {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes revolutionStop {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(0deg); } }
+@keyframes star1Back {
+  from {
+    margin-left: 40%;
+    margin-top: -8%; }
+  to {
+    margin-left: 40%;
+    margin-top: 42%; } }
+@keyframes star2Back {
+  from {
+    margin-left: 70%;
+    margin-top: -1%; }
+  to {
+    margin-left: 40%;
+    margin-top: 42%; } }
+@keyframes star3Back {
+  from {
+    margin-left: 86%;
+    margin-top: 19%; }
+  to {
+    margin-left: 40%;
+    margin-top: 42%; } }
+@keyframes star4Back {
+  from {
+    margin-left: 91%;
+    margin-top: 46%; }
+  to {
+    margin-left: 40%;
+    margin-top: 42%; } }
+@keyframes star5Back {
+  from {
+    margin-left: 82%;
+    margin-top: 72%; }
+  to {
+    margin-left: 40%;
+    margin-top: 42%; } }
+@keyframes star6Back {
+  from {
+    margin-left: 58%;
+    margin-top: 90%; }
+  to {
+    margin-left: 40%;
+    margin-top: 42%; } }
+@keyframes star7Back {
+  from {
+    margin-left: 24%;
+    margin-top: 90%; }
+  to {
+    margin-left: 40%;
+    margin-top: 42%; } }
+@keyframes star8Back {
+  from {
+    margin-left: 0%;
+    margin-top: 72%; }
+  to {
+    margin-left: 40%;
+    margin-top: 42%; } }
+@keyframes star9Back {
+  from {
+    margin-left: -10%;
+    margin-top: 46%; }
+  to {
+    margin-left: 40%;
+    margin-top: 42%; } }
+@keyframes star10Back {
+  from {
+    margin-left: -4%;
+    margin-top: 20%; }
+  to {
+    margin-left: 40%;
+    margin-top: 42%; } }
+@keyframes star11Back {
+  from {
+    margin-left: 12%;
+    margin-top: 0%; }
+  to {
+    margin-left: 40%;
+    margin-top: 42%; } }
+@keyframes star1Bomb {
+  to {
+    margin-left: 10%;
+    margin-top: -8%; }
+  from {
+    margin-left: 40%;
+    margin-top: 42%; } }
+@keyframes star2Bomb {
+  to {
+    margin-left: -20%;
+    margin-top: -20%; }
+  from {
+    margin-left: 40%;
+    margin-top: 42%; } }
+@keyframes star3Bomb {
+  to {
+    margin-left: 45%;
+    margin-top: 70%; }
+  from {
+    margin-left: 40%;
+    margin-top: 42%; } }
+@keyframes star4Bomb {
+  to {
+    margin-left: 80%;
+    margin-top: -50%; }
+  from {
+    margin-left: 40%;
+    margin-top: 42%; } }
+@keyframes star5Bomb {
+  to {
+    margin-left: 55%;
+    margin-top: -88%; }
+  from {
+    margin-left: 40%;
+    margin-top: 42%; } }
+@keyframes star6Bomb {
+  to {
+    margin-left: 68%;
+    margin-top: 90%; }
+  from {
+    margin-left: 40%;
+    margin-top: 42%; } }
+@keyframes star7Bomb {
+  to {
+    margin-left: -85%;
+    margin-top: 50%; }
+  from {
+    margin-left: 40%;
+    margin-top: 42%; } }
+@keyframes star8Bomb {
+  to {
+    margin-left: -60%;
+    margin-top: -8%; }
+  from {
+    margin-left: 40%;
+    margin-top: 42%; } }
+@keyframes star9Bomb {
+  to {
+    margin-left: -5%;
+    margin-top: 80%; }
+  from {
+    margin-left: 40%;
+    margin-top: 42%; } }
+@keyframes star10Bomb {
+  to {
+    margin-left: -45%;
+    margin-top: 40%; }
+  from {
+    margin-left: 40%;
+    margin-top: 42%; } }
+@keyframes star11Bomb {
+  to {
+    margin-left: 80%;
+    margin-top: -20%; }
+  from {
+    margin-left: 40%;
+    margin-top: 42%; } }
+
+/*# sourceMappingURL=style.css.map */
